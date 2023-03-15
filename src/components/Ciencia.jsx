@@ -12,10 +12,10 @@ const Ciencia = () => {
           a Teoria Geocêntrica medieval (adotada pela Igreja Católica), em que a
           Terra seria o centro do Universo.
         </p>
-        <img src="src/assets/copernico.png" alt="Heliocentrismo" />
+        <img src="./assets/copernico.png" alt="Heliocentrismo" />
       </div>
       <div className={styles.cientista}>
-        <img src="src/assets/galileu.png" alt="Galileu olhando um telescópio" />
+        <img src="./assets/galileu.png" alt="Galileu olhando um telescópio" />
         <p>
           <span>Galileu Galilei</span> (1564-1642): astrônomo, físico,
           matemático e filósofo italiano, Galileu foi defensor da Teoria
@@ -31,10 +31,10 @@ const Ciencia = () => {
           celeste inspiradas no modelo heliocêntrico, apresentando estudos sobre
           as eclipses lunar e solar.
         </p>
-        <img src="src/assets/kepler.png" alt="Eclipses solar e lunar" />
+        <img src="./assets/kepler.png" alt="Eclipses solar e lunar" />
       </div>
       <div className={styles.cientista}>
-        <img src="src/assets/vesalius.png" alt="Anatomia humana" />
+        <img src="./assets/vesalius.png" alt="Anatomia humana" />
         <p>
           <span>Andreas Vesalius</span> (1514-1564): médico belga, considerado o
           “Pai da Anatomia Moderna”, Vesalius foi um dos precursores dos estudos
@@ -78,7 +78,7 @@ const Ciencia = () => {
           conhecimentos nas áreas da matemática, física e filosofia natural.
           Estudou o movimento dos corpos propondo as três “Leis de Newton”.
         </p>
-        <img src="src/assets/newton.png" alt="Newton e suas descobertas" />
+        <img src="./assets/newton.png" alt="Newton e suas descobertas" />
       </div>
     </section>
   );

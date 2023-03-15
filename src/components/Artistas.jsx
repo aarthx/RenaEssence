@@ -5,7 +5,7 @@ const Artistas = () => {
   return (
     <section className={styles.artistas}>
       <div className={styles.boxArtist}>
-        <img src="src/assets/daVinci.png" alt="Leonardo da Vinci" />
+        <img src="./assets/daVinci.png" alt="Leonardo da Vinci" />
         <div className={styles.artistDescription}>
           <h2>Leonardo da Vinci</h2>
           <p>
@@ -39,10 +39,10 @@ const Artistas = () => {
             <li>Centauromaquia</li>
           </ul>
         </div>
-        <img src="src/assets/michelangelo.png" alt="Michelangelo" />
+        <img src="./assets/michelangelo.png" alt="Michelangelo" />
       </div>
       <div className={styles.boxArtist}>
-        <img src="src/assets/botticelli.png" alt="Botticelli" />
+        <img src="./assets/botticelli.png" alt="Botticelli" />
         <div className={styles.artistDescription}>
           <h2>Sandro Botticelli</h2>
           <p>
@@ -76,7 +76,7 @@ const Artistas = () => {
             <li>O Triunfo de Galatéia</li>
           </ul>
         </div>
-        <img src="src/assets/rafael.png" alt="Rafael Sanzio" />
+        <img src="./assets/rafael.png" alt="Rafael Sanzio" />
       </div>
     </section>
   );
