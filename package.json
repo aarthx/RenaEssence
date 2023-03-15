@@ -2,7 +2,7 @@
   "name": "renaessence",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://aarthx.github.io/RenaEssence",
+  "homepage": "https://aarthx.github.io/RenaEssence/",
   "type": "module",
   "scripts": {
     "dev": "vite",
