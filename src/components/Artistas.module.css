@@ -1,0 +1,122 @@
+.artistas {
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.artistas .boxArtist {
+  padding: 6rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.artistas .boxArtist:last-child {
+  padding: 6rem 0 ;
+}
+
+.artistas .boxArtist:nth-child(even) {
+  text-align: end;
+}
+
+.artistas .boxArtist img {
+  max-width: 30rem;
+  box-shadow: 0 0 4px 10px rgba(var(--color-darkB-rgb),0.25);
+}
+
+.artistas .boxArtist .artistDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.artistas .boxArtist .artistDescription h2 {
+  font-size: 2.5rem;
+  font-family: var(--font-secundary);
+  font-weight: 400;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.artistas .boxArtist .artistDescription p {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+  max-width: 26rem;
+}
+
+.artistas .boxArtist .artistDescription ul:before{
+  content: attr(aria-label);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.artistas .boxArtist .artistDescription ul{
+  margin-top: 1.5rem;
+}
+
+.artistas .boxArtist .artistDescription ul li:first-child {
+  margin-top: 1rem;
+}
+
+.artistas .boxArtist .artistDescription ul li{
+  content: attr(aria-label);
+  font-size: 1.25rem;
+  list-style: none;
+}
+
+@media (max-width: 1050px) {
+  .artistas .boxArtist {
+    padding: 4rem 3rem 0 3rem;
+  }
+  .artistas .boxArtist:last-child {
+    padding: 4rem 3rem ;
+  }
+  .artistas .boxArtist {
+    gap: 2rem;
+  }
+  .artistas .boxArtist .artistDescription p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .artistas .boxArtist img {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .artistas .boxArtist {
+    flex-direction: column;
+  }
+  .artistas .boxArtist .artistDescription p,.artistas .boxArtist .artistDescription h2,.artistas .boxArtist .artistDescription ul {
+    text-align: start;
+  }
+  .artistas .boxArtist:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 400px) {
+  .artistas .boxArtist img {
+    max-width: 15rem;
+  }
+  .artistas .boxArtist .artistDescription h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .artistas .boxArtist img {
+    max-width: 10rem;
+  }
+  .artistas .boxArtist .artistDescription h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+

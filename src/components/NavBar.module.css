@@ -1,0 +1,101 @@
+.navBar {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  background-color: rgba(var(--color-darkB-rgb), 0.1);
+  padding: 1.5rem 0;
+}
+
+.navBar .logo {
+  font-family: var(--font-secundary);
+  font-weight: 400;
+  font-size: 2.75rem;
+  user-select: none;
+  margin-left: 3rem;
+}
+
+.navBar .links {
+  font-family: var(--font-primary);
+  gap: 1.5rem;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+.navBar .links a {
+  position: relative;
+}
+
+.navBar .links a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--color-darkB);
+  transition: .3s;
+}
+
+.navBar .links a:hover::after {
+ width: 100%;
+}
+
+@media (max-width: 850px) {
+  .navBar {
+    flex-direction: column;
+  }
+  .navBar .logo {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+  }
+  .navBar .links {
+    margin-right: 0;
+  }
+  .navBar .links a {
+    background-color: rgba(var(--color-darkB-rgb), 0.25);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .navBar {
+    padding: 0.5rem 0;
+  }
+  .navBar .logo {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  .navBar .links {
+    margin-right: 0;
+  }
+  .navBar .links a {
+    background-color: rgba(var(--color-darkB-rgb), 0.25);
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .navBar {
+    padding: 0.5rem 0;
+  }
+  .navBar .logo {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  .navBar .links {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .navBar .links {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

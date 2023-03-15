@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cinzel+Decorative:wght@400;700&display=swap');
+
+:root {
+  --color-dark: #0a0908;
+  --color-blue: #22333b;
+  --color-light: #EAE0D5;
+  --color-lightB: #C6AC8F;
+  --color-darkB: #5E503F;
+  --color-darkB-rgb: 94,80,63;
+  --font-primary: 'Alice', serif;
+  --font-secundary: 'Cinzel Decorative', cursive;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-lightB);
+}
+
+header,nav {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+ul,li {
+  margin: 0;
+  padding: 0;
+}

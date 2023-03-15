@@ -1,0 +1,265 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.capa {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: url('src/assets/capa.png') no-repeat center center;
+  background-size: cover;
+}
+
+.capa h2 {
+  font-weight: 400;
+  padding: 3rem 0;
+  font-family: var(--font-primary);
+  max-width: 65rem;
+  text-align: end;
+  font-size: 7rem;
+  color: var(--color-blue);
+}
+
+.capa span {
+  font-family: var(--font-secundary);
+  color: var(--color-light);
+  letter-spacing: 1.5rem;
+  font-weight: bold;
+  font-size: 7.5rem;
+}
+
+.capa img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.imgsHome,.citeHome {
+  position: relative;
+  max-width: 75rem;
+}
+
+.imgsHome div{
+  position: relative;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.imgsHome div:nth-child(2){
+  padding: calc(5rem + 25px) 0 5rem 0;
+}
+
+.imgsHome div::after {
+  left: -40px;
+  bottom: -25px;
+  position: absolute;
+  content: '';
+  display: block;
+  width: calc(100% + 5rem);
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--color-darkB);
+}
+
+.imgsHome img {
+  box-shadow: -20px 20px 0px var(--color-light);
+}
+
+.imgsHome p {
+  font-family: var(--font-primary);
+  max-width: 40rem;
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+.imgsHome div:nth-child(2) p {
+  text-align: end;
+}
+
+.imgsHome span {
+  color: var(--color-blue);
+}
+
+.citeHome blockquote {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.citeHome blockquote span {
+  font-size: 4rem;
+}
+
+@media (max-width: 1700px) {
+  .capa img {
+    opacity: 0.2;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1300px) {
+  .capa img {
+    display: none;
+  }  
+  .capa h2 {
+    max-width: 60rem;
+    font-size: 6rem;
+  }
+  .capa span {
+    font-size: 6.5rem;
+  }
+  .imgsHome,.citeHome {
+    position: relative;
+    max-width: 65rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .imgsHome,.citeHome {
+    position: relative;
+    max-width: 55rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .capa h2 {
+    max-width: 50rem;
+    font-size: 5rem;
+  }
+  .capa span {
+    font-size: 5.5rem;
+  }
+  .imgsHome,.citeHome {
+    position: relative;
+    max-width: 50rem;
+  }
+  .imgsHome p {
+    font-family: var(--font-primary);
+    max-width: 50rem;
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+  .citeHome blockquote {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .citeHome blockquote span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .capa h2 {
+    max-width: 40rem;
+    font-size: 4rem;
+  }
+  .capa span {
+    font-size: 4.5rem;
+  }
+  .imgsHome,.citeHome {
+    max-width: 40rem;
+  }
+  .imgsHome div{
+    padding: 4rem 0;
+    gap: 3rem;
+  }
+  .imgsHome img {
+    max-width: 15rem;
+  }  
+  .citeHome blockquote {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .citeHome blockquote span {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .imgsHome,.citeHome {
+    max-width: 30rem;
+  }
+  .imgsHome div{
+    text-align: center;
+    flex-direction: column;
+  }
+  .imgsHome div p{
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .capa h2 {
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  .capa span {
+    font-size: 3.5rem;
+  }
+  .imgsHome,.citeHome {
+    position: relative;
+    max-width: 20rem;
+  }
+  .imgsHome div,.citeHome {
+    padding: 2rem 0 !important;
+  }
+  .citeHome blockquote {
+    margin: 1rem 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .citeHome blockquote span {
+    font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .capa h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .capa span {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .imgsHome,.citeHome {
+    position: relative;
+    max-width: 10rem;
+  }
+  .citeHome blockquote {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  .citeHome blockquote span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .imgsHome p {
+    font-size: 1.25rem;
+  }  
+  .imgsHome img {
+    max-width: 10rem;
+  }  
+  .capa h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .capa span {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+}
