@@ -8,12 +8,12 @@ const Home = () => {
         <h2>
           O Renascimento: um Período de <span>Mudanças</span>
         </h2>
-        <img src="src/assets/leoDaVinci.png" alt="Leonardo da Vinci sombra" />
+        <img src="./assets/leoDaVinci.png" alt="Leonardo da Vinci sombra" />
       </section>
       <section className={styles.imgsHome}>
         <div>
           <img
-            src="/src/assets/amorSacro.png"
+            src="./assets/amorSacro.png"
             alt="Arte Amor Sacro e amor Profano"
           />
           <p>
@@ -33,7 +33,7 @@ const Home = () => {
             <span>geografia</span>.
           </p>
           <img
-            src="/src/assets/homemVitruviano.png"
+            src="./assets/homemVitruviano.png"
             alt="Arte O Homem Vitruviano"
           />
         </div>
